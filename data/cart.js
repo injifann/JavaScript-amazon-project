@@ -31,7 +31,7 @@ export function addToCart(productId)
     else
     {
       cart.push({
-        productId:productid,
+        productId:productId,
         quantity:1
   
       });
