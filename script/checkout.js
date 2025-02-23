@@ -16,6 +16,8 @@ cart.forEach((cartItem)=>{
 
     }
   })
+  if(matchingProduct)
+  {
 
   cartSummaryHTML+= `
    <div class="cart-item-container 
@@ -98,7 +100,7 @@ cart.forEach((cartItem)=>{
                 </div>
               </div>
             </div>
-  `;
+  `;}
 
 });
 
@@ -114,10 +116,7 @@ document.querySelectorAll('.js-delete-link').forEach((link)=>{
 
 
      const container=document.querySelector(`.js-cart-item-container-${productId}`);
-     
      container.remove();
-
-
     });
     
 
